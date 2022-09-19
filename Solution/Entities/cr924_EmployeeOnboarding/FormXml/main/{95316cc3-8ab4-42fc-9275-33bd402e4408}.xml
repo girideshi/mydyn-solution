@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{95316cc3-8ab4-42fc-9275-33bd402e4408}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{978bb8ba-32ef-4af5-adc7-d3dd79bfc69b}" IsUserDefined="1" name="Employee Basic Information">
+          <labels>
+            <label description="Employee Basic Information" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{cb5c98b3-4d9d-40dd-90b7-68b1653ecfe2}" name="Employee info">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a32d2d1f-d5fa-404f-a857-d4c86dc9da0e}">
+                        <labels>
+                          <label description="Employee Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_employeename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr924_employeename" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{19d6c605-15b3-421d-8300-ea0fcaedb3ed}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Designation" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_designation" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr924_designation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ff76c1b-736a-4b05-967f-5662e63ab77a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Employee Type" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_employeetype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr924_employeetype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2f5b865d-4519-403e-b6fe-0225bc6079b9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="DOB" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_dob" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr924_dob" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{78e22070-2b4a-4c4c-8973-e3e63981c1b8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_email" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cr924_email" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a9bacd63-1fbe-4e90-b1db-b9bb00a996f3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Emergency Contact Mail" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_emergencycontactmail" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr924_emergencycontactmail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f426260e-3d70-4eb4-afa6-6199ec01bb36}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Phone Number" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_phonenumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr924_phonenumber" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Employee Basic Information_section_3" id="de670059-6a89-476a-89a4-c8c818f0dcd1" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Interview Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{59f075b1-96ea-4ed5-a670-de9b94b44de8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Ineterview start date" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_ineterviewstartdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr924_ineterviewstartdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7ff34011-f7f0-4448-a533-5abdfe0ae59d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Interview end date" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_interviewenddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr924_interviewenddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f355a038-2fd0-4fca-a08b-649312374228}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Date of joining" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_dateofjoining" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr924_dateofjoining" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{380e4a6c-037e-494d-8fe8-cee3a896c240}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="New SG control 1663423386801" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>cr924_designation</TargetEntityType>
+                            <ViewId>{54D5C700-F4E6-49B1-98B9-B17537845DBE}</ViewId>
+                            <ViewIds>{54D5C700-F4E6-49B1-98B9-B17537845DBE}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{bb1d9fb5-4614-448d-bca9-200b0ed0aef2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Number of leaves" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_numberofleaves" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr924_numberofleaves" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{6e79a117-2ad4-4acd-8994-e7ebe6a0a6aa}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Employee Basic Information_section_4" id="6cba76e7-18bd-4b2d-9248-04b44e9ccc89" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" locklevel="0" id="{4b0eef41-d0f2-4abc-b11b-e92de218b1c0}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell showlabel="false" locklevel="0" id="{555adb04-64a7-47b3-8dbe-cae7358f8b1d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="ded61481-2a0f-4cc3-bc1f-e464e51b69d3" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Admin IT" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_3" id="e8349292-2d24-4649-805e-f297587def60" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="IT Admin" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b7f5ec0c-fc2e-45ac-b6e1-048f5325b3e0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is device setup" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_isdevicesetup" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr924_isdevicesetup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e9be4c69-6e74-408c-b1d0-1329f8c28b21}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is VPN allocated" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_isvpnallocated" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr924_isvpnallocated" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6daeb857-d81c-487e-9852-871d426c0d7f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is Account created" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_isaccountcreated" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr924_isaccountcreated" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{147eb4ce-99fd-41ab-9e47-1f202ea86de5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Corporate email" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_corporateemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cr924_corporateemail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{be6c8136-8c95-43a5-9b82-8fd449fddcbe}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Admin note" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_adminnote" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr924_adminnote" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_manager" id="ed5e7617-bb21-48e1-b9cd-7e7598cd16a8" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Manager" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_manager" id="32aa67b5-068c-4deb-8787-7f5203ecc56e" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Manager" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{939db2ec-efff-4b7b-99e9-84cadec83d2e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Business unit" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_businessunit" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr924_businessunit" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ff4d8ad8-2549-488e-b294-3511c3fc608d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Project information" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_projectinformation" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr924_projectinformation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd24be24-21ed-4ff0-81ec-26d7af48cec4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Manager Email" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_manageremail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cr924_manageremail" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_employee" id="427eb55b-0204-4f66-8a45-3f9ecd6449cf" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Date 1 Employee Activity" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_employee" id="ddbd7f59-d65b-42cc-beb9-1206257a55c1" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Employee Secion" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{36703877-bbd7-48f2-bc07-c8498478b42d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is Biomentric done" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_isbiomentricdone" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr924_isbiomentricdone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{de95845f-6003-4cf5-af3e-62b56822f0ff}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is information verified" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_isinformationverified" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr924_isinformationverified" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6add3a66-1641-4632-b902-4fc5475385ea}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is induction completed" languagecode="1033" />
+                        </labels>
+                        <control id="cr924_isinductioncompleted" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr924_isinductioncompleted" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{38b8f8cc-c033-4637-bdd3-954cbad159b7}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{8f6f2dc4-5c2f-4e9c-b19a-3280ddad2d6e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8ac49c11-766b-4e52-aee4-04c89918c5e8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fcee0194-b9fe-48bb-a92e-226c2b832066}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ee972c14-0a9f-491c-91a9-221aad3190cc}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{243362d6-57d4-4365-949f-8d9ed053c58b}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{2f44fa80-6b0c-4cfa-93af-7f0a02de9bde}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5d7ce3aa-23d1-4e4a-a625-a64d94382f6c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{022d0afa-588c-42e5-ac69-014edf273359}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

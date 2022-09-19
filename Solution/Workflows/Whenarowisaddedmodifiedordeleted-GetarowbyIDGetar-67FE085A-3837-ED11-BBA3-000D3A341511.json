@@ -1,0 +1,189 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr924_sharedcommondataserviceforapps_eccbd"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_sendmail": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr924_sharedsendmail_daead"
+        },
+        "api": {
+          "name": "shared_sendmail"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "e3ff8870-9aa0-4177-85bd-73f6e90650af"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "cr924_employeewf",
+              "subscriptionRequest/scope": 4
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Get_a_row_by_ID": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "2fd3faaa-c36e-4d82-a94f-75575e97546d"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "processstages",
+              "recordId": "@triggerOutputs()?['body/_activestageid_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Get_a_row_by_ID_2": {
+          "runAfter": {
+            "Get_a_row_by_ID": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "d49bc393-b985-4eed-bbf8-8d07dae3b73d"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr924_employeeonboardings",
+              "recordId": "e@{triggerOutputs()?['body/_bpf_cr924_employeeonboardingid_value']}"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Switch": {
+          "runAfter": {
+            "Get_a_row_by_ID_2": [
+              "Succeeded"
+            ]
+          },
+          "cases": {
+            "Case": {
+              "case": "IT Admin",
+              "actions": {
+                "Send_an_email_notification_(V3)": {
+                  "runAfter": {},
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_sendmail",
+                      "operationId": "SendEmailV3",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sendmail"
+                    },
+                    "parameters": {
+                      "request/to": "v-girs@microsoft.com;",
+                      "request/subject": "Next steps",
+                      "request/text": "<p>Next steps</p>"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                }
+              }
+            },
+            "Case_2": {
+              "case": "Manager",
+              "actions": {
+                "Send_an_email_notification_(V3)_2": {
+                  "runAfter": {},
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_sendmail",
+                      "operationId": "SendEmailV3",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sendmail"
+                    },
+                    "parameters": {
+                      "request/to": "v-girs@microsoft.com;",
+                      "request/subject": "Next step: Manager",
+                      "request/text": "<p>Next steps</p>"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                }
+              }
+            },
+            "Case_3": {
+              "case": "Employee Day 1",
+              "actions": {
+                "Send_an_email_notification_(V3)_3": {
+                  "runAfter": {},
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_sendmail",
+                      "operationId": "SendEmailV3",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sendmail"
+                    },
+                    "parameters": {
+                      "request/to": "v-girs@microsoft.com;",
+                      "request/subject": "end of steps",
+                      "request/text": "<p>Next steps</p>"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "actions": {}
+          },
+          "expression": "@outputs('Get_a_row_by_ID')?['body/stagename']",
+          "metadata": {
+            "operationMetadataId": "2d873381-b263-4af9-ad19-0c3908244955"
+          },
+          "type": "Switch"
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

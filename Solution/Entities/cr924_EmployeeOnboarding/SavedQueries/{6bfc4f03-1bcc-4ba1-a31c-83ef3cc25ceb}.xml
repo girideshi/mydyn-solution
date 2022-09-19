@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6bfc4f03-1bcc-4ba1-a31c-83ef3cc25ceb}</savedqueryid>
+    <layoutxml>
+      <grid name="cr924_employeeonboardings" jump="cr924_employeename" select="1" icon="1" preview="1">
+        <row name="cr924_employeeonboarding" id="cr924_employeeonboardingid">
+          <cell name="cr924_employeename" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr924_employeeonboarding">
+          <attribute name="cr924_employeeonboardingid" />
+          <attribute name="cr924_employeename" />
+          <attribute name="createdon" />
+          <order attribute="cr924_employeename" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Employee Onboarding Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

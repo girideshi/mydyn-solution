@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="bpf_cr924_employeeonboarding_cr924_employeewf" />
+  <EntityRelationship Name="business_unit_cr924_designation" />
+  <EntityRelationship Name="business_unit_cr924_employeeonboarding" />
+  <EntityRelationship Name="cr924_cr924_employeeonboarding_Designation_cr92" />
+  <EntityRelationship Name="lk_cr924_designation_createdby" />
+  <EntityRelationship Name="lk_cr924_designation_modifiedby" />
+  <EntityRelationship Name="lk_cr924_employeeonboarding_createdby" />
+  <EntityRelationship Name="lk_cr924_employeeonboarding_modifiedby" />
+  <EntityRelationship Name="owner_cr924_designation" />
+  <EntityRelationship Name="owner_cr924_employeeonboarding" />
+  <EntityRelationship Name="team_cr924_designation" />
+  <EntityRelationship Name="team_cr924_employeeonboarding" />
+  <EntityRelationship Name="user_cr924_designation" />
+  <EntityRelationship Name="user_cr924_employeeonboarding" />
+</EntityRelationships>

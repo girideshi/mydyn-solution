@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b93fd337-e383-4c75-aaf2-a35c271d6acc}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr924_employeename" select="1" icon="1" preview="1">
+        <row name="result" id="cr924_employeeonboardingid">
+          <cell name="cr924_employeename" width="300" />
+          <cell name="cr924_designation" width="100" />
+          <cell name="cr924_email" width="100" />
+          <cell name="cr924_manageremail" width="100" />
+          <cell name="cr924_ineterviewstartdate" width="100" />
+          <cell name="cr924_interviewenddate" width="100" />
+          <cell name="cr924_dateofjoining" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr924_employeeonboarding">
+          <attribute name="cr924_employeeonboardingid" />
+          <attribute name="cr924_employeename" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr924_designation" />
+          <attribute name="cr924_email" />
+          <attribute name="cr924_manageremail" />
+          <attribute name="cr924_ineterviewstartdate" />
+          <attribute name="cr924_interviewenddate" />
+          <attribute name="cr924_dateofjoining" />
+          <order attribute="cr924_employeename" descending="false" />
+          <order attribute="cr924_dateofjoining" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Employee Onboardings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

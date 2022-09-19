@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{71feb56b-2837-ed11-bba3-000d3a341511}" Name="EmployeeWF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/EmployeeWF-71FEB56B-2837-ED11-BBA3-000D3A341511.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>cr924_employeewf</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>cr924_EmployeeOnboarding</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="EmployeeWF" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{47c19bbc-590e-49c0-ab24-879ea223089c}">
+      <label languagecode="1033" description="HR" />
+    </steplabels>
+    <steplabels id="{36f36244-5913-48af-bcc4-e872b02e81f0}">
+      <label languagecode="1033" description="Employee Name" />
+    </steplabels>
+    <steplabels id="{3b780943-5ca7-4674-82bd-f4e3648cec55}">
+      <label languagecode="1033" description="Employee Type" />
+    </steplabels>
+    <steplabels id="{9c367d7a-6467-438a-8513-1b19a838c1c6}">
+      <label languagecode="1033" description="DOB" />
+    </steplabels>
+    <steplabels id="{9afa55ff-a1f7-47ec-80a8-5a0f8c75888e}">
+      <label languagecode="1033" description="Email" />
+    </steplabels>
+    <steplabels id="{b18dd992-020e-402c-85b0-c1b60c5b1618}">
+      <label languagecode="1033" description="Phone Number" />
+    </steplabels>
+    <steplabels id="{19129a67-711e-4016-9be1-cb808ec58dc3}">
+      <label languagecode="1033" description="Emergency Contact Mail" />
+    </steplabels>
+    <steplabels id="{82b70c34-9fb3-4265-a8ab-308dd4f00318}">
+      <label languagecode="1033" description="Manager email" />
+    </steplabels>
+    <steplabels id="{369faa83-5b2d-486b-8c9d-2e774f216ff3}">
+      <label languagecode="1033" description="Ineterview start date" />
+    </steplabels>
+    <steplabels id="{7169f1fa-997f-4a03-a22b-e303dfae38f7}">
+      <label languagecode="1033" description="Interview end date" />
+    </steplabels>
+    <steplabels id="{5c00e883-c99b-4d5a-b14e-855b2d9fdbf5}">
+      <label languagecode="1033" description="IT Admin" />
+    </steplabels>
+    <steplabels id="{2385352e-978c-46e0-b6f0-4dd2590602ad}">
+      <label languagecode="1033" description="Is Account created" />
+    </steplabels>
+    <steplabels id="{a792beb3-1708-4653-be66-20f77beb8622}">
+      <label languagecode="1033" description="Is VPN allocated" />
+    </steplabels>
+    <steplabels id="{8b4561ab-3f78-4503-99f8-a45a1f0d2dad}">
+      <label languagecode="1033" description="Is device setup" />
+    </steplabels>
+    <steplabels id="{287b24ab-1a65-4bcf-96ea-51c7cf4ec4f8}">
+      <label languagecode="1033" description="Corporate email" />
+    </steplabels>
+    <steplabels id="{f01cdb7f-9fed-4667-9ee6-8b08566ffa7b}">
+      <label languagecode="1033" description="Admin note" />
+    </steplabels>
+    <steplabels id="{b681bf02-d727-44c5-a8d2-487c521b292c}">
+      <label languagecode="1033" description="Manager" />
+    </steplabels>
+    <steplabels id="{b7ae35b4-207f-4445-9264-4ffa11c7bd32}">
+      <label languagecode="1033" description="Business unit" />
+    </steplabels>
+    <steplabels id="{759d8b89-0f16-4662-8481-9089c98b20df}">
+      <label languagecode="1033" description="Project information" />
+    </steplabels>
+    <steplabels id="{00a368ae-133e-492d-a18a-da0731f585f2}">
+      <label languagecode="1033" description="Employee Day 1" />
+    </steplabels>
+    <steplabels id="{03b8476c-d2ae-47c0-a605-f4d5fd7447a3}">
+      <label languagecode="1033" description="Is Biomentric done" />
+    </steplabels>
+    <steplabels id="{9c6f2632-688f-4823-8159-fa41c57415fa}">
+      <label languagecode="1033" description="Is induction completed" />
+    </steplabels>
+    <steplabels id="{cc2f3962-6195-4447-bb1a-c94ff105ad8a}">
+      <label languagecode="1033" description="Is information verified" />
+    </steplabels>
+  </labels>
+</Workflow>

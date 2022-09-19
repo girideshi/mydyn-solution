@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{aa09f0d4-8665-41d7-b448-9db363d81f1b}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{47c19bbc-590e-49c0-ab24-879ea223089c}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{f35b1b04-4fdd-46d3-a3a0-95badae6e71d}">
+          <labels>
+            <label description="HR" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{4fd0b43f-b6a4-fb88-01f2-cec85f101ec6}" name="StageStep3_section1" labelid="{3004eb89-f3c5-46d2-9488-45ca93ddfa41}">
+                  <labels>
+                    <label description="HR" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{36f36244-5913-48af-bcc4-e872b02e81f0}" showlabel="true" visible="true" labelid="{01d81a6a-6503-481f-aa78-0cbfbf124076}">
+                        <labels>
+                          <label description="Employee Name" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_employeename" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr924_employeename" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3b780943-5ca7-4674-82bd-f4e3648cec55}" showlabel="true" visible="true" labelid="{c1fa596b-badd-46ae-8e9a-8f7b503e6b27}">
+                        <labels>
+                          <label description="Employee Type" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_employeetype" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cr924_employeetype" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9c367d7a-6467-438a-8513-1b19a838c1c6}" showlabel="true" visible="true" labelid="{82f90e15-8939-4df7-ab28-d0a7ab83fe1c}">
+                        <labels>
+                          <label description="DOB" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_dob" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="cr924_dob" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9afa55ff-a1f7-47ec-80a8-5a0f8c75888e}" showlabel="true" visible="true" labelid="{c7bf6a01-6d7e-4449-b73c-35496f253c25}">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_email" classid="{ada2203e-b4cd-49be-9ddf-234642b43b52}" datafieldname="cr924_email" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b18dd992-020e-402c-85b0-c1b60c5b1618}" showlabel="true" visible="true" labelid="{01f57ede-41ef-4e2b-92b5-54d4b9463908}">
+                        <labels>
+                          <label description="Phone Number" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_phonenumber" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr924_phonenumber" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{19129a67-711e-4016-9be1-cb808ec58dc3}" showlabel="true" visible="true" labelid="{d12f65ab-67d2-4da0-bf08-7ceaf7be6a77}">
+                        <labels>
+                          <label description="Emergency Contact Mail" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_emergencycontactmail" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="cr924_emergencycontactmail" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{82b70c34-9fb3-4265-a8ab-308dd4f00318}" showlabel="true" visible="true" labelid="{d0090187-53f0-4364-b368-72c7324fa288}">
+                        <labels>
+                          <label description="Manager email" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_manageremail" classid="{ada2203e-b4cd-49be-9ddf-234642b43b52}" datafieldname="cr924_manageremail" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{369faa83-5b2d-486b-8c9d-2e774f216ff3}" showlabel="true" visible="true" labelid="{ba5619f0-e613-44bc-befc-dbb7e2168b8a}">
+                        <labels>
+                          <label description="Ineterview start date" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_ineterviewstartdate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="cr924_ineterviewstartdate" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7169f1fa-997f-4a03-a22b-e303dfae38f7}" showlabel="true" visible="true" labelid="{47d74e2d-80f9-4d5c-9dfa-1f0829695fe6}">
+                        <labels>
+                          <label description="Interview end date" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_interviewenddate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="cr924_interviewenddate" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{5c00e883-c99b-4d5a-b14e-855b2d9fdbf5}" name="StageStep23" locklevel="0" expanded="true" visible="false" labelid="{ee43e606-2050-4e93-a4a2-8a0dcf708a6b}">
+          <labels>
+            <label description="IT Admin" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{01a3fa6f-dd03-0610-c16a-3fd063257159}" name="StageStep23_section1" labelid="{7d925f12-e253-4ad1-a123-25ac6a2842d1}">
+                  <labels>
+                    <label description="IT Admin" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2385352e-978c-46e0-b6f0-4dd2590602ad}" showlabel="true" visible="true" labelid="{ca6c8f4d-d4fc-4617-8670-8a8b7869e7bb}">
+                        <labels>
+                          <label description="Is Account created" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_isaccountcreated" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="cr924_isaccountcreated" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a792beb3-1708-4653-be66-20f77beb8622}" showlabel="true" visible="true" labelid="{bf6c1224-dc3e-4bf2-b424-15133087d32d}">
+                        <labels>
+                          <label description="Is VPN allocated" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_isvpnallocated" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="cr924_isvpnallocated" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8b4561ab-3f78-4503-99f8-a45a1f0d2dad}" showlabel="true" visible="true" labelid="{05880de8-3f9d-47a1-9263-5add7253bf53}">
+                        <labels>
+                          <label description="Is device setup" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_isdevicesetup" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="cr924_isdevicesetup" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{287b24ab-1a65-4bcf-96ea-51c7cf4ec4f8}" showlabel="true" visible="true" labelid="{83a0badd-3243-4adb-a18c-8bfe6e9daa1e}">
+                        <labels>
+                          <label description="Corporate email" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_corporateemail" classid="{ada2203e-b4cd-49be-9ddf-234642b43b52}" datafieldname="cr924_corporateemail" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f01cdb7f-9fed-4667-9ee6-8b08566ffa7b}" showlabel="true" visible="true" labelid="{beaf5e0f-4174-4d50-bc81-898de49d1902}">
+                        <labels>
+                          <label description="Admin note" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_adminnote" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="cr924_adminnote" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{b681bf02-d727-44c5-a8d2-487c521b292c}" name="StageStep35" locklevel="0" expanded="true" visible="false" labelid="{e5c4728a-c618-45b6-9c6e-15df71d5b60a}">
+          <labels>
+            <label description="Manager" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{f319b564-ff54-8e3c-a3ae-88cfeb338e07}" name="StageStep35_section1" labelid="{1e4db2d4-526b-4565-8d28-30f4ec123036}">
+                  <labels>
+                    <label description="Manager" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b7ae35b4-207f-4445-9264-4ffa11c7bd32}" showlabel="true" visible="true" labelid="{7b3b38bc-2de0-470f-8d03-1ac9de140dda}">
+                        <labels>
+                          <label description="Business unit" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_businessunit" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cr924_businessunit" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{759d8b89-0f16-4662-8481-9089c98b20df}" showlabel="true" visible="true" labelid="{846aeb34-f658-46c5-9560-548db742d06b}">
+                        <labels>
+                          <label description="Project information" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_projectinformation" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="cr924_projectinformation" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{00a368ae-133e-492d-a18a-da0731f585f2}" name="StageStep41" locklevel="0" expanded="true" visible="false" labelid="{d48dd2dc-6329-4b35-891d-762c45878633}">
+          <labels>
+            <label description="Employee Day 1" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{892fe07d-04ad-aa9b-2056-fe059c9f5517}" name="StageStep41_section1" labelid="{c3def708-b2b0-4e82-a3ab-c4192bb682d7}">
+                  <labels>
+                    <label description="Employee Day 1" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{03b8476c-d2ae-47c0-a605-f4d5fd7447a3}" showlabel="true" visible="true" labelid="{90d89319-0d75-4e5e-a235-09efaca6d607}">
+                        <labels>
+                          <label description="Is Biomentric done" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_isbiomentricdone" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="cr924_isbiomentricdone" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9c6f2632-688f-4823-8159-fa41c57415fa}" showlabel="true" visible="true" labelid="{067faffe-e4af-4f52-8a7e-41e61db5b2c4}">
+                        <labels>
+                          <label description="Is induction completed" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_isinductioncompleted" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="cr924_isinductioncompleted" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cc2f3962-6195-4447-bb1a-c94ff105ad8a}" showlabel="true" visible="true" labelid="{2095fd2d-51dd-4d7e-a730-5ba0d7ea39cf}">
+                        <labels>
+                          <label description="Is information verified" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr924_employeeonboarding_cr924_employeewf:cr924_isinformationverified" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="cr924_isinformationverified" disabled="false" relationship="bpf_cr924_employeeonboarding_cr924_employeewf" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

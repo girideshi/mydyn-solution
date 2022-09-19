@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{54d5c700-f4e6-49b1-98b9-b17537845dbe}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr924_designationname" select="1" icon="1" preview="1">
+        <row name="result" id="cr924_designationid">
+          <cell name="cr924_designationname" width="300" />
+          <cell name="cr924_description" width="276" />
+          <cell name="cr924_minimumexperience" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="cr924_designation">
+          <attribute name="cr924_designationid" />
+          <attribute name="cr924_designationname" />
+          <attribute name="createdon" />
+          <attribute name="cr924_description" />
+          <attribute name="cr924_minimumexperience" />
+          <order attribute="cr924_designationname" descending="false" />
+          <order attribute="cr924_minimumexperience" descending="false" />
+          <filter type="and">
+            <condition attribute="cr924_minimumexperience" operator="gt" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Designation" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

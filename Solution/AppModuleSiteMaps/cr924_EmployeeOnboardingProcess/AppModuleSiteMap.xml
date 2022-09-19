@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>cr924_EmployeeOnboardingProcess</SiteMapUniqueName>
+  <EnableCollapsibleGroups>False</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="area_227ddc3d" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Employee OB" />
+      </Titles>
+      <Group Id="group_863fb872" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Employee" />
+        </Titles>
+        <SubArea Id="subarea_5f04b1df" Entity="cr924_employeeonboarding" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+    <Area Id="NewArea_1bf5d8f7" ResourceId="SitemapDesigner.NewArea" ShowGroups="false">
+      <Titles>
+        <Title LCID="1033" Title="Employee WF" />
+      </Titles>
+      <Group Id="NewGroup_7c218b1" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="wf" />
+        </Titles>
+        <SubArea Id="NewSubArea_97acaeca" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="cr924_employeewf" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Employee Onboarding Process" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

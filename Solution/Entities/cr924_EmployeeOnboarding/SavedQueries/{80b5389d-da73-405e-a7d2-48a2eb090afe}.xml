@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{80b5389d-da73-405e-a7d2-48a2eb090afe}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr924_employeename" select="1" icon="1" preview="1">
+        <row name="result" id="cr924_employeeonboardingid">
+          <cell name="cr924_employeename" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr924_employeeonboarding">
+          <attribute name="cr924_employeeonboardingid" />
+          <attribute name="cr924_employeename" />
+          <attribute name="createdon" />
+          <order attribute="cr924_employeename" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="cr924_employeename" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Employee Onboardings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
